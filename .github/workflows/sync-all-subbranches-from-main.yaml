@@ -1,7 +1,7 @@
 name: Use githubaction to sync all subbranches from main
 on:
   push:
-    branches-ignore:
+    branches:
       - main
       - master
 jobs:
@@ -10,6 +10,11 @@ jobs:
     steps:
       - name: Checkout Repo
         uses: actions/checkout@v3
+
+      - name: Determine if main branch has changes
+        id: check-main-changes
+        run: echo ::set-output name=main-changes::$(git diff --name-only ${{ github.event.before }} ${{ github.sha }} | grep '^main/' || true)
+
       - name: Sync branch with main
         id: sync
         uses: GirishCodeAlchemy/githubaction-sync-subbranch@main
@@ -19,9 +24,29 @@ jobs:
           SMTP_HOST: ${{ inputs.smtp-host }}
 
       - name: Send email on merge conflict
-        if: steps.sync.outputs.conflict != ''
+        if: steps.sync.outputs.conflict != '' && steps.check-main-changes.outputs.main-changes != ''
         run: echo "Merge conflict in ${{ steps.sync.outputs.conflict }}"  # Adjust the notification mechanism
 
       - name: Send success notification
-        if: steps.sync.outputs.conflict == ''
+        if: steps.sync.outputs.conflict == '' && steps.check-main-changes.outputs.main-changes != ''
         run: echo "Merge successful in $GITHUB_REF"
+
+
+
+      # - name: Checkout Repo
+      #   uses: actions/checkout@v3
+      # - name: Sync branch with main
+      #   id: sync
+      #   uses: GirishCodeAlchemy/githubaction-sync-subbranch@main
+      #   env:
+      #     SMTP_USERNAME: ${{ inputs.smtp-username }}
+      #     SMTP_PASSWORD: ${{ inputs.smtp-password }}
+      #     SMTP_HOST: ${{ inputs.smtp-host }}
+
+      # - name: Send email on merge conflict
+      #   if: steps.sync.outputs.conflict != ''
+      #   run: echo "Merge conflict in ${{ steps.sync.outputs.conflict }}"  # Adjust the notification mechanism
+
+      # - name: Send success notification
+      #   if: steps.sync.outputs.conflict == ''
+      #   run: echo "Merge successful in $GITHUB_REF"
