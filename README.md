@@ -11,4 +11,4 @@ Github Action Playground
 | [Capture GithubAction Workflow status to Readme](.github/workflows/update-readme-worflow-status.yaml) | [![Capture GithubAction Workflow status to Readme](https://github.com/GirishCodeAlchemy/alchemy-githubaction-playground/actions/workflows/update-readme-worflow-status.yaml/badge.svg)](https://github.com/GirishCodeAlchemy/alchemy-githubaction-playground/actions/workflows/update-readme-worflow-status.yaml) |
 <!-- END_ACTIONS_TABLE -->
 
-### 2. Sync all the subbranches from the main
+### 2. Sync all the subbranches from the main: [link]()
