@@ -1,2 +1,2 @@
-# alchemy-githubaction-playground
+# Alchemy Githubaction Playground
 Github action playground
