@@ -1,5 +1,8 @@
 # Alchemy Github Action Playground
 
+Github Action Playground
+
+### 1. Update the Github workflow status automatically to the readme
 
 <!-- START_ACTIONS_TABLE -->
 | Workflow | Build Status |
