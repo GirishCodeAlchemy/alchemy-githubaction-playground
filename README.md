@@ -1,5 +1,4 @@
-# Alchemy GithubAction Playground
-Github action playground
+# Alchemy Github Action Playground
 
 
 <!-- START_ACTIONS_TABLE -->
