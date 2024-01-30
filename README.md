@@ -13,4 +13,4 @@ Github Action Playground
 
 <!-- END_ACTIONS_TABLE -->
 
-### 2. Sync all the subbranches from the main: []afgdh
+### 2. Sync all the subbranches from the main:
