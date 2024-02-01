@@ -1,6 +1,6 @@
 # Alchemy Github Action Playground
 
-**Github Action Playground**
+**Github Action Playground**:
 
 ### 1. Update the Github workflow status automatically to the readme:[link](https://github.com/marketplace/actions/capture-githubaction-workflow-status-to-readme)
 
