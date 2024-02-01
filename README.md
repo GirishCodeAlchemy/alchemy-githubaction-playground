@@ -16,4 +16,4 @@
 ### 2. Sync all the subbranches from the main:
 
 
-### 3. Adhoc command
+### 3. PR Adhoc command
