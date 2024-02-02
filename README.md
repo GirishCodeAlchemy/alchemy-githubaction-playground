@@ -14,3 +14,5 @@ __**Github Action Playground**__ :
 <!-- END_ACTIONS_TABLE -->
 
 ### 2. Sync all the subbranches from the main:
+
+### 3. PR adhoc command
