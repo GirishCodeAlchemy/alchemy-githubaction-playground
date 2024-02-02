@@ -5,12 +5,11 @@
 ### 1. Update the Github workflow status automatically to the readme:[link](https://github.com/marketplace/actions/capture-githubaction-workflow-status-to-readme)
 
 <!-- START_ACTIONS_TABLE -->
-
-| Workflow                                                                                                    | Build Status                                                                                                                                                                                                                                                                                                              |
-| ----------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Workflow | Build Status |
+|----------|--------------|
+| [PR Adhoc commands](.github/workflows/pr-adhoc-command.yaml) | [![PR Adhoc commands](https://github.com/GirishCodeAlchemy/alchemy-githubaction-playground/actions/workflows/pr-adhoc-command.yaml/badge.svg)](https://github.com/GirishCodeAlchemy/alchemy-githubaction-playground/actions/workflows/pr-adhoc-command.yaml) |
 | [Use githubaction to sync all subbranches from main](.github/workflows/sync-all-subbranches-from-main.yaml) | [![Use githubaction to sync all subbranches from main](https://github.com/GirishCodeAlchemy/alchemy-githubaction-playground/actions/workflows/sync-all-subbranches-from-main.yaml/badge.svg)](https://github.com/GirishCodeAlchemy/alchemy-githubaction-playground/actions/workflows/sync-all-subbranches-from-main.yaml) |
-| [Capture GithubAction Workflow status to Readme](.github/workflows/update-readme-worflow-status.yaml)       | [![Capture GithubAction Workflow status to Readme](https://github.com/GirishCodeAlchemy/alchemy-githubaction-playground/actions/workflows/update-readme-worflow-status.yaml/badge.svg)](https://github.com/GirishCodeAlchemy/alchemy-githubaction-playground/actions/workflows/update-readme-worflow-status.yaml)         |
-
+| [Capture GithubAction Workflow status to Readme](.github/workflows/update-readme-worflow-status.yaml) | [![Capture GithubAction Workflow status to Readme](https://github.com/GirishCodeAlchemy/alchemy-githubaction-playground/actions/workflows/update-readme-worflow-status.yaml/badge.svg)](https://github.com/GirishCodeAlchemy/alchemy-githubaction-playground/actions/workflows/update-readme-worflow-status.yaml) |
 <!-- END_ACTIONS_TABLE -->
 
 ### 2. Sync all the subbranches from the main:
